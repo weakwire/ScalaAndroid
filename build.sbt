@@ -1,4 +1,5 @@
 name := "Scala Android"
 
-version := "0.1a"
+version := "0.1"
+
 
