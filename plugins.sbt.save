@@ -1,0 +1,3 @@
+libraryDependencies += "slinky" % "slinky" % "2.1" from "http://sliy2.googlecode.com/svn/artifacts/2.1/slinky.jar"
+
+https://raw.github.com/weakwire/ScalaAndroid/master/scala-android.jar

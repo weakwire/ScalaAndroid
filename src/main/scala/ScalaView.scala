@@ -1,13 +1,15 @@
 package com.weakwire.scala.android
+
 import android.view.{MotionEvent, View}
 import android.view.View.{OnLongClickListener, OnFocusChangeListener, OnTouchListener, OnClickListener}
 
 trait ScalaView {
-  implicit def view2ScalaView[T <: View](view: T) =
-    new _ScalaView[T](view)
+  implicit def view2ScalaView[T <: View](view: T) = new _ScalaView[T](view)
 }
 
 class _ScalaView[T <: View](view: T) {
+
+  def childById(id: Int) = new _ScalaView[View](view.findViewById(id))
 
   /*  LISTENERS */
 

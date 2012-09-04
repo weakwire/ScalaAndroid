@@ -1,11 +1,11 @@
 package com.weakwire.scala.android
+
 import android.view.KeyEvent
 import android.widget.TextView
 import android.widget.TextView.OnEditorActionListener
 
 trait ScalaTextView {
-  implicit def textView2ScalaTextView[T <: TextView](textView: T) =
-    new _ScalaTextView[T](textView)
+  implicit def textView2ScalaTextView[T <: TextView](textView: T) = new _ScalaTextView[T](textView)
 }
 
 class _ScalaTextView[T <: TextView](textView: T) {
